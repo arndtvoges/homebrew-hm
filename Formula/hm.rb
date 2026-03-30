@@ -1,22 +1,22 @@
 class Hm < Formula
-  desc "Translate natural language into shell commands using Claude AI"
+  desc "Translate natural language into shell commands using AI"
   homepage "https://github.com/arndtvoges/hm"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/arndtvoges/hm/releases/download/v1.0.0/hm-darwin-arm64"
-      sha256 "33d63bc3212d27b812aa74d7f8b776a2839f47a32979db79a25e833b46b8aaa0"
+      url "https://github.com/arndtvoges/hm/releases/download/v1.1.0/hm-darwin-arm64"
+      sha256 "292f847ad75acc009f18b1ab90db81182a8968057e923aff9276f003376997c0"
     else
-      url "https://github.com/arndtvoges/hm/releases/download/v1.0.0/hm-darwin-x64"
-      sha256 "f06deb322aeef52ed272da941c5d456315562e6ae16e1a3609ac97b27a574c50"
+      url "https://github.com/arndtvoges/hm/releases/download/v1.1.0/hm-darwin-x64"
+      sha256 "158d04a570069e02b88f464b28b491aa61d8318f0f400d485d04afb2e5fdd30c"
     end
   end
 
   on_linux do
-    url "https://github.com/arndtvoges/hm/releases/download/v1.0.0/hm-linux-x64"
-    sha256 "351a26efb1057dfdd24f6084f7c7a856399d0a8ca5e609eafcf8368628d82b04"
+    url "https://github.com/arndtvoges/hm/releases/download/v1.1.0/hm-linux-x64"
+    sha256 "1185fe2627b1c73fdee3719cd999b40db368055bd24a49511a73cd2748ddb6f4"
   end
 
   def install
